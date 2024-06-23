@@ -31,21 +31,16 @@ class Employee:
     def salary_raise(self):
         self.pay = int(self.pay * self.raise_amount)
 
-    # you can use this as an alternative constructor
     @classmethod
     def set_raise_amount(cls, amount):
         cls.raise_amount = amount
 
-    # alternative contructor
     @classmethod
     def from_string(cls, emp_str):
         fname, lname, pay = emp_str.split("-")
         pay = int(pay)
         return cls(fname, lname, pay)
 
-    # Note:- static method does not take self or cls as an argument
-    # it is just a utility function
-    # it does not depend on the class or instance
     @staticmethod
     def is_workday(day):
         if day.weekday() == 5 or day.weekday() == 6:
