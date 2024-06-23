@@ -35,12 +35,14 @@ class Employee:
     def set_raise_amount(cls, amount):
         cls.raise_amount = amount
 
+    # use to create factory methods
     @classmethod
     def from_string(cls, emp_str):
         fname, lname, pay = emp_str.split("-")
         pay = int(pay)
         return cls(fname, lname, pay)
 
+    # use for utility functions
     @staticmethod
     def is_workday(day):
         return day.weekday() not in (5, 6)
