@@ -14,6 +14,7 @@ class Flyable:
         print("Flying")
 
 
+# from left to right it will check
 class FlyingCar(Car, Flyable):
     def start(self):
         super().start()
