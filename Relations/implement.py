@@ -3,7 +3,7 @@ Implement / Realization:- Realization is a relationship where a class implements
 
 A bird implements the flyable interface, providing concrete behavior for flying.
 
-[Bird] - - - -|> [Flyable] // Car is a Vehicle
+[Bird] - - - -|> [Flyable] // Bird can Fly
 """
 
 from abc import ABC, abstractmethod
