@@ -79,3 +79,38 @@ director = Director(builder)
 director.construct_car()
 car = builder.get_car()
 print(car)  # Car with Sports Wheels, V8 Engine, and Sporty body.
+
+
+"""
+Realworld examples:- 
+
+1) Building a Custom Computer System:
+Product: Computer
+Builders: CustomComputerBuilder, GamingComputerBuilder, OfficeComputerBuilder
+Attributes: CPU, GPU, RAM, Storage, Power Supply, Case
+Director: Assembles the components based on user specifications or predefined configurations for gaming, office, or custom setups.
+
+2) Constructing a Meal in a Restaurant:
+Product: Meal
+Builders: VeganMealBuilder, NonVeganMealBuilder, KidsMealBuilder
+Attributes: Main Course, Side Dish, Drink, Dessert
+Director: Chooses the appropriate builder based on the customer's dietary preferences and assembles the meal.
+
+3) Creating a Travel Package:
+Product: TravelPackage
+Builders: BeachVacationBuilder, AdventureTripBuilder, CulturalTourBuilder
+Attributes: Flight, Hotel, Activities, Meals, Transportation
+Director: Puts together the travel package based on the type of vacation the customer wants.
+
+4) Constructing a House:
+Product: House
+Builders: ModernHouseBuilder, VictorianHouseBuilder, EcoFriendlyHouseBuilder
+Attributes: Foundation, Structure, Roof, Interior, Exterior
+Director: Oversees the construction process and ensures all the steps are followed to build the house as per the design.
+
+5) Designing a Software Product:
+Product: SoftwareProduct
+Builders: MobileAppBuilder, WebAppBuilder, DesktopAppBuilder
+Attributes: User Interface, Backend, Database, API, Security
+Director: Manages the development process and integrates various components to deliver the final software product.
+"""
